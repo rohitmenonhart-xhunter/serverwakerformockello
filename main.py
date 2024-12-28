@@ -3,7 +3,7 @@ import time
 
 
 def ping_server():
-    url = "http://your-flask-server-ip:5000/ping"
+    url = "https://serverforpaymentmockello.onrender.com/ping"
     while True:
         try:
             response = requests.get(url)
