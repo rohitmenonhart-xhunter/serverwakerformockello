@@ -1,6 +1,6 @@
 import requests
 import time
-
+import os
 
 def ping_server():
     url = "https://serverforpaymentmockello.onrender.com/ping"
@@ -18,4 +18,5 @@ def ping_server():
 
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if PORT is not set
     ping_server()
